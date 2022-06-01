@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sinh viên</title>
+    <link rel="stylesheet" href="thongtin.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h1{
+            background-color:aquamarine;
+            border-bottom: 2px solid gray;
+            text-align: center;
+        }
+       
+        .gioithieu{
+            background-color: antiquewhite;
+        }
+        #tv{
+            width: 300px;
+            height: 50px;
+            background-color:darkgreen;
+            margin-left: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="gioithieu"><h1>Giới thiệu đề tài</h1><a id="in4">Đồ ăn vặt luôn là món ăn có sức hút cực kỳ lớn và chưa bao giờ có dấu hiệu ngừng “ hot” <br>
+    đặc biệt là đối với giới trẻ đối tượng khách hàng tiềm năng họ thường xuyên truy cập internet<br> để mua sắm online nên việc kinh 
+    doanh đồ ăn vặt online sẽ mang đến hiệu quả cao.<br><br>
+    Vậy thì với một website bán đồ ăn vặt mang đến những lợi ích : <br>
+    Thu hút, tiếp cận khách hàng một cách đơn giản, dễ dàng, nhanh chóng với một website đồ ăn vặt <br>
+    chỉ với một chiếc smartphone có kết nối internet dù bạn ở bạn ở bất kỳ đâu cũng có thể thưởng thức <br>những món ăn hấp dẫn.
+    <br> => Vì vậy nhóm em quyết định làm đồ án thiết kế Web bán thức ăn nhanh </a>
+</div>  
+    <h1 id="tv">
+        Thành viên nhóm <br><p>(Rê chuột vào ảnh để xem chi tiết) </h1>
+    <div class="container">
+        <div class="icon-social">
+                      <a href="https://www.facebook.com/Xuantuan059/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="https://mail.google.com/mail/u/0/#inbox" ><i class="fa fa-google" aria-hidden="true"></i></a>
+                      <a href="https://www.instagram.com/xuantuan01/" ><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      <a href="https://www.youtube.com/channel/UCGRteQaA_3MUX-crhiFxkLg"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                      <a href="https://www.linkedin.com/in/tuan-doan-xuan-041125211/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <img src="assets/avatar.jpg" alt="">
+        <h2>Đoàn Xuân Tuấn</h2>
+        <p>Đông Hà,Quảng Trị</p>
+        <p>Sinh viên Trường Đại học Công Nghiệp Thực Phẩm</p>
+        <div class="btn-container">
+            <button>Liên hệ</button>
+            <button>Kết bạn</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="icon-social">
+                      <a href="https://www.facebook.com/Xuantuan059/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="https://mail.google.com/mail/u/0/#inbox" ><i class="fa fa-google" aria-hidden="true"></i></a>
+                      <a href="https://www.instagram.com/xuantuan01/" ><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      <a href="https://www.youtube.com/channel/UCGRteQaA_3MUX-crhiFxkLg"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                      <a href="https://www.linkedin.com/in/tuan-doan-xuan-041125211/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <img src="assets/avatar1.jpg" alt="">
+        <h2>Lê Tuấn Minh</h2>
+        <p>Châu Thành,Trà Vinh</p>
+        <p>Sinh viên Trường Đại học Công Nghiệp Thực Phẩm</p>
+        <div class="btn-container">
+            <button>Liên hệ</button>
+            <button>Kết bạn</button>
+        </div>
+    </div>  
+</body>
+<script>
+    const imgB=document.querySelector('.container img')
+    imgB.addEventListener("click",function(){
+        this.classList.toggle("active")
+    })
+</script>
+</html>

@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #112d42;
+}
+section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:50%;
+    height: 100%;
+    background: #03a9f4;
+}
+section .container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display:flex;
+    z-index: 100;
+}
+section .container .containerinfo{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #0f3959;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
+section .container .containerinfo h2{
+    color: #fff;
+    font-size: 24px;
+    margin: 20px 0;
+}
+section .container .containerinfo li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+section .container .containerinfo li span{
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+    font-size: 20px;
+}
+/*Hiệu Ứng Hover Cho Thẻ Li*/
+section .container .containerinfo li:hover span{
+    opacity: 1;
+}
+section .container .containerinfo .sci{
+    position: relative;
+    display:flex;
+}
+section .container .containerinfo .sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+section .container .containerinfo .sci li a{
+    text-decoration: none;
+    opacity: 0.5;
+    color: #fff;
+    font-size: 32px;
+}
+/*Hiệu Ứng Hover Icon*/
+section .container .containerinfo .sci li:hover a{
+    opacity: 1;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+ 
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .product-items{
+            display: flex;
+            justify-content: space-between;
+            background-color: #ddd;
+            padding:12px;
+        }
+        .product-item{
+            width:100%;
+            background-color: #fff;
+            padding:12px;
+            text-align: center;
+        }
+        .product-item img{
+            width:50%;
+            height:100px;
+        }
+        .product-item button{
+            margin-top: 20px;
+            height: 37px;
+            padding: 0 12px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .product-item button:hover{
+            background-color: red;
+        }
+        .cart{
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            padding-top: 30px;
+        }
+        .cart h2{
+            margin-bottom: 20px;
+        }
+        .cart table{
+            width: 100%;
+        }
+       
+        .cart table tr td{
+            border-bottom: 1px solid #ddd; 
+        }
+       
+    </style>
+</head>
+<body>
+    <section class="product">
+        <div class="container">
+            <div class="product-items">
+                <div class="product-item">
+                    <img src="assets/sanpham1.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>50.000đ</span></p>
+                        <h1>Mẹt đồ chiên</h1>
+                    </div>
+                    <button>Thêm vào giỏi Hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="assets/sanpham2.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>299.000đ</span></p>
+                        <h1>Mẹt nem nướng</h1>
+                    </div>
+                    <button>Thêm vào giỏi Hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="assets/sanpham3.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>99.000đ</span></p>
+                        <h1>Mẹt bánh xèo nem lụi</h1>
+                    </div>
+                    <button>Thêm vào giỏi Hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="assets/sanpham4.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>89.000đ</span></p>
+                        <h1>Mẹt nướng Sapa</h1>
+                    </div>
+                    <button>Thêm vào giỏi Hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="assets/sanpham5.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>9.000đ</span></p>
+                        <h1>Nem lụi dưa chuột</h1>
+                    </div>
+                    <button>Thêm vào giỏi Hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="assets/sanpham6.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>15.000đ</span></p>
+                        <h1>Bò bía trứng</h1>
+                    </div>
+                    <button>Thêm vào giỏi Hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="assets/sanpham7.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>95.000đ</span></p>
+                        <h1>Xiên que thịt nướng</h1>
+                    </div>
+                    <button>Thêm vào giỏi Hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="assets/sanpham8.jpg" alt="">
+                    <div class="product-item-text">
+                        <p><span>85.000đ</span></p>
+                        <h1>Óc móng tay sả ớt</h1>
+                    </div>
+                    <button>Thêm vào giỏi Hàng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cart">
+        <h2>Giỏ Hàng</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>SL</th>
+                        <th>Chọn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="display:flex;align-items:center"><img style="width:70px" src="assets/sanpham1.jpg" alt="">Mẹt đồ chiên</td>
+                        <td><span>50.000đ</span></td>
+                        <td><input style="width:30px;outline:none" type="number" value="1" min="1"></td>
+                        <td style="cursor:pointer">Xóa</td>
+                    </tr>
+                    <tr>
+                        <td style="display:flex;align-items:center"><img style="width:70px" src="assets/sanpham2.jpg" alt="">Mẹt nem nướng</td>
+                        <td><span>349.000đ</span></td>
+                        <td><input style="width:30px;outline:none" type="number" value="1" min="1"></td>
+                        <td style="cursor:pointer">Xóa</td>
+                   </tr> 
+                </tbody>
+            </table>
+            <div style="text-align:center" class="price-total">
+                <p style="font-weight:900;">Tổng tiền:<span>299.000đ</span></p>
+            </div>
+        </form>
+    </section>
+    <script src="cart.js"></script>
+</body>
+</html>
